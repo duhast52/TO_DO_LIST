@@ -18,8 +18,8 @@ addBtn.addEventListener('click', () => {
     if (typeof inputValue == 'undefined' || !inputValue || inputValue.length === 0 || inputValue === "" || !/[^\s]/.test(inputValue) || /^\s*$/.test(inputValue) || inputValue.replace(/\s/g, "") === "") {
         document.querySelector("#myInput").placeholder = "Поле не может быть пустым";
     } else {
-        document.querySelector("#myInput").placeholder = "Title";
         document.querySelector("#myUL").append(li);
+        document.querySelector("#myInput").placeholder = "Title";
     }
 
     document.querySelector("#myInput").value = "";
